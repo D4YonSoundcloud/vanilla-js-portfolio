@@ -3,8 +3,10 @@ const projectsContainer = document.getElementById("projects-container");
 const githubContainer = document.getElementById("github-container");
 const aboutContainer = document.getElementById("about-container");
 const bigProjectsContainer = document.getElementById("big-projects-container");
+const smallProjectsContainer = document.getElementById("small-projects-container");
 const backArrowProjects = document.getElementById("backarrow-projects");
 const backArrowBigProjects = document.getElementById("backarrow-big-projects");
+const backArrowSmallProjects = document.getElementById("backarrow-small-projects");
 const backArrowGithub = document.getElementById("backarrow-github");
 const backArrowAboutMe = document.getElementById("backarrow-aboutme");
 const githubIcon = document.getElementById("github-icon");
@@ -119,3 +121,29 @@ backArrowBigProjects.addEventListener("click", () => {
   bigProjectsContainer.classList.remove("show-big-projects");
   projectsContainer.classList.add("show-projects");
 });
+
+smallProjectsBTN.addEventListener("click", () => {
+    bigProjectsBTN.style.opacity = 0;
+    smallProjectsBTN.style.opacity = 0;
+    body.classList.add("small-projects-style");
+    backArrowProjects.classList.remove("backarrow-projects");
+    backArrowSmallProjects.classList.add("small");
+    console.log("working");
+    mainContainer.classList.remove("projects-style");
+    mainContainer.classList.add("small-projects-style");
+    smallProjectsContainer.classList.add("show-small-projects");
+    console.log("done");
+  });
+
+  backArrowSmallProjects.addEventListener("click", () => {
+    bigProjectsBTN.style.opacity = 1;
+    smallProjectsBTN.style.opacity = 1;
+    body.classList.remove("small-projects-style");
+    body.classList.add("projects-style");
+    backArrowSmallProjects.classList.remove("small");
+    backArrowProjects.classList.add("backarrow-projects");
+    mainContainer.classList.remove("small-projects-style");
+    mainContainer.classList.add("projects-style");
+    smallProjectsContainer.classList.remove("show-small-projects");
+    projectsContainer.classList.add("show-projects");
+  });
