@@ -166,24 +166,24 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.backarrow-github {
   opacity: 0.7;
   color: rgb(94, 185, 129);
-  transform: translateY(150px) scale(2.5);
+  transform: translateY(110px) scale(2.5);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.backarrow-github:hover {
   opacity: 0.7;
   color: rgb(59, 126, 64);
-  transform: translateY(150px) scale(3);
+  transform: translateY(110px) scale(3);
 }
 .fas.fa-long-arrow-alt-left.backarrow-aboutme {
   opacity: 0.7;
   color: rgb(78, 122, 180);
-  transform: translateY(280px) scale(2.5);
+  transform: translateY(40px) scale(2.5);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.backarrow-aboutme:hover {
   opacity: 0.7;
   color: rgb(50, 77, 109);
-  transform: translateY(280px) scale(3);
+  transform:  translateY(40px) scale(3);
 }
 .fab.fa-github {
   opacity: 0;
@@ -226,7 +226,7 @@ div.about-profile {
 }
 
 div.about-text {
-  transform: translateY(-300px);
+  transform: translateY(-10px);
 }
 
 div.big-projects,
@@ -333,4 +333,81 @@ h1 {
 
 h1.hide {
     opacity: 0;
+}
+
+div.about-profile-bio{
+    width: 350px;
+    display: inline-block;
+  border: none;
+  /* background-color: rgb(224, 145, 145); */
+  text-align: left;
+  font-family: "Spartan";
+  color: rgb(56, 107, 165);
+  font-size: 1.25rem;
+  text-shadow: -1px 0 0.5px rgb(62, 94, 163), 0 1px 0.5px rgb(69, 122, 153), 1px 0 0.5px rgb(62, 115, 139),
+    0 -1px 2px rgb(93, 155, 173);
+  transition: 0.5s ease;
+}
+
+div.skills {
+    text-align: center;
+    width: 350px;
+    display: inline-block;
+  border: none;
+  /* background-color: rgb(224, 145, 145); */
+  text-align: center;
+  font-family: "Spartan";
+  color: rgb(56, 107, 165);
+  font-size: 1.25rem;
+  text-shadow: -1px 0 0.5px rgb(62, 94, 163), 0 1px 0.5px rgb(69, 122, 153), 1px 0 0.5px rgb(62, 115, 139),
+    0 -1px 2px rgb(93, 155, 173);
+  transition: 0.5s ease;
+}
+div.divider {
+    color: rgb(50, 87, 156);
+    width: 300px;
+    height: 10px;
+}
+
+ul.list-skills {
+    width: 350px;
+    display: inline-block;
+  border: none;
+  /* background-color: rgb(224, 145, 145); */
+  text-align: left;
+  font-family: "Spartan";
+  color: rgb(56, 107, 165);
+  font-size: 1.25rem;
+  text-shadow: -1px 0 0.05px rgb(62, 94, 163), 0 1px 0.05px rgb(69, 122, 153), 1px 0 0.05px rgb(62, 115, 139),
+    0 -1px 0.05px rgb(93, 155, 173);
+  transition: 0.2s ease;
+}
+
+div.about-project-bio{
+    width: 350px;
+    display: inline-block;
+  border: none;
+  /* background-color: rgb(224, 145, 145); */
+  text-align: left;
+  font-family: "Spartan";
+  color: rgb(56, 107, 165);
+  font-size: 1.25rem;
+  text-shadow: -1px 0 0.5px rgb(62, 94, 163), 0 1px 0.5px rgb(69, 122, 153), 1px 0 0.5px rgb(62, 115, 139),
+    0 -1px 2px rgb(93, 155, 173);
+  transition: 0.5s ease;
+}
+
+div.github-profile-bio{
+    width: 400px;
+    display: inline-block;
+  border: none;
+  /* background-color: rgb(224, 145, 145); */
+  text-align: left;
+  font-family: "Spartan";
+  color: rgb(87, 172, 94);
+  font-size: 1.0rem;
+  transform: translateY(30px);
+  text-shadow: -1px 0 0.5px rgb(31, 83, 24), 0 1px 0.5px rgb(21, 97, 50), 1px 0 0.5px rgb(26, 110, 51),
+    0 -1px 0.5px rgb(45, 126, 72);
+  transition: 0.5s ease;
 }
