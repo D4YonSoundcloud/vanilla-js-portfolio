@@ -1,194 +1,272 @@
-@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
-:root { --main-container-color: #ffffff;}
+@import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
+:root {
+  --main-container-color: #ffffff;
+}
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    display: flex;
-    height: 100vh;
-    font-family: 'Spartan';
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--background-color,rgb(241, 241, 241));
-    transition: .5s ease-in;
+  margin: 0;
+  display: flex;
+  height: 100vh;
+  font-family: "Spartan";
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color, rgb(241, 241, 241));
+  transition: 0.7s ease-in;
 }
 
-body.projects-style{
-    background-color: var(--background-color,rgb(182, 14, 14))
+body.projects-style {
+  background-color: var(--background-color, rgb(182, 14, 14));
 }
 
-body.github-style{
-    background-color: var(--background-color,rgb(58, 133, 81))
+body.github-style {
+  background-color: var(--background-color, rgb(58, 133, 81));
 }
 
-body.about-style{
-    background-color: var(--background-color,rgb(84, 153, 170))
+body.about-style {
+  background-color: var(--background-color, rgb(84, 153, 170));
 }
 
 #main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 400px;
-    max-height: 1000px;
-    max-width: 1000px;
-    background-color:var(--box-color,#ffffff);
-    border-radius: 
-    calc(var(--top-left, 10) * 1px)
-    calc(var(--top-right, 10) * 1px) 
-    calc(var(--bottom-right, 10) * 1px)
-    calc(var(--bottom-left, 10) * 1px);
-    box-shadow: 
-        calc(var(--x-position, 3) * 1px)
-        calc(var(--y-position, 3) * 1px)
-        calc(var(--blur, 2) * 1px)
-        calc(var(--spread, 1) * 1px)
-        var(--shadow-color, rgb(175, 174, 174) );
-        transition: .8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 400px;
+  max-height: 1000px;
+  max-width: 1000px;
+  background-color: var(--box-color, #ffffff);
+  border-radius: calc(var(--top-left, 50) * 1px)
+    calc(var(--top-right, 50) * 1px) calc(var(--bottom-right, 50) * 1px)
+    calc(var(--bottom-left, 50) * 1px);
+  box-shadow: calc(var(--x-position, 3) * 1px) calc(var(--y-position, 3) * 1px)
+    calc(var(--blur, 2) * 1px) calc(var(--spread, 1) * 1px)
+    var(--shadow-color, rgb(175, 174, 174));
+  transition: 0.7s ease-in-out;
 }
 
 #home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
-
 
 #github-container {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    opacity: 0;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-    transition: .8s ease-in
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  transition: 0.6s ease-in;
 }
-
-
 
 #home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 
-#projects-container{
-    position: absolute;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-    transition: .8s ease-in;
+#projects-container {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  transition: 0.6s ease-in;
 }
 
-#about-container{
-    position: absolute;
-    opacity: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 0;
-    transition: 1s ease-in;
+#about-container {
+  position: absolute;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  transition: 1s ease-in;
 }
 
-div.show-about{
-    opacity: 1!important;
-    z-index: 2!important;
+div.show-about {
+  opacity: 1 !important;
+  z-index: 2 !important;
 }
 div.show-projects {
-    opacity: 1!important;
-    z-index: 2!important;
-
+  opacity: 1 !important;
+  z-index: 2 !important;
 }
 
 div.show-github {
-    opacity: 1!important;
-    z-index: 2!important;
+  opacity: 1 !important;
+  z-index: 2 !important;
 }
 
 div.button {
-    display: inline-block;
-    border: none;
-    text-align: left;
-    padding: 20px 20px;
-    font-family: 'Spartan';
-    color:rgb(122, 122, 122);
-    font-size: 3rem;
-    text-shadow: -1px 0 2px black, 0 1px  2px black, 1px 0  2px black, 0 -1px  2px black;
-    transition: .4s ease-in-out;
+  display: inline-block;
+  border: none;
+  text-align: left;
+  padding: 20px 20px;
+  font-family: "Spartan";
+  color: rgb(122, 122, 122);
+  font-size: 3rem;
+  text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black,
+    0 -1px 2px black;
+  transition: 0.4s ease-in-out;
 }
 
 div.button:hover {
-    cursor: pointer;
-    transform: scale(1.10);
-    text-align: center;
+  cursor: pointer;
+  transform: scale(1.1);
+  text-align: center;
+}
+
+.fas.fa-long-arrow-alt-left{
+    opacity: 0
+}
+.fas.fa-long-arrow-alt-left.backarrow-projects {
+    opacity: 0.7;
+    color: rgb(199, 95, 95);
+    transform: translateY(150px) scale(2.5);
+    transition: 0.4s ease;
+}
+.fas.fa-long-arrow-alt-left.backarrow-projects:hover {
+    opacity: 0.7;
+    color: rgb(199, 95, 95);
+    transform: translateY(150px) scale(3);
+
+}
+.fas.fa-long-arrow-alt-left.backarrow-github {
+    opacity: 0.7;
+    color: rgb(94, 185, 129);
+    transform: translateY(150px) scale(2.5);
+    transition: 0.4s ease;
+}
+.fas.fa-long-arrow-alt-left.backarrow-github:hover {
+    opacity: 0.7;
+    color: rgb(59, 126, 64);
+    transform: translateY(150px) scale(3);
+
+}
+.fas.fa-long-arrow-alt-left.backarrow-aboutme {
+    opacity: 0.7;
+    color: rgb(78, 122, 180);
+    transform: translateY(280px) scale(2.5);
+    transition: 0.4s ease;
+}
+.fas.fa-long-arrow-alt-left.backarrow-aboutme:hover {
+    opacity: 0.7;
+    color: rgb(50, 77, 109);
+    transform: translateY(280px) scale(3);
+
+}
+.fab.fa-github{
+    opacity: 0;
+    color: rgb(63, 126, 68);
+    transform: scale(0) translateX(50);
+    padding: 10px;
+    transition: 1s ease;
+}
+.fab.fa-github.show-github-icon{
+    opacity: 0.8;
+    color: rgb(58, 139, 58);
+    transform: scale(5) translateX(-10px) translateY(-2px);
+}
+
+a.github-link {
+    text-decoration: none;
+    font-size: 3rem;
+    text-align: left;
+    color: rgb(63, 126, 68);
+    text-shadow: -1px 0 1px rgb(45, 146, 92), 0 1px 1px rgb(75, 175, 145),
+    1px 0 1px rgb(48, 126, 67), 0 -1px 1px rgb(19, 144, 36);
+    transition: 0.4s ease;
+}
+
+a.github-link:hover{
+    transform: scale(1.5)!important;
 }
 
 div.about-profile {
-    display: inline-block;
-    border: none;
-    text-align: left;
-    padding: 20px 20px;
-    font-family: 'Spartan';
-    color:rgb(255, 255, 255);
-    font-size: 3rem;
-    text-shadow: -1px 0 2px rgb(63, 152, 194), 0 1px  2px rgb(13, 95, 143), 1px 0  2px rgb(17, 45, 110), 0 -1px  2px rgb(35, 77, 175);
-    transition: .5s ease-in-out;
+  display: inline-block;
+  border: none;
+  text-align: left;
+  padding: 20px 20px;
+  font-family: "Spartan";
+  color: rgb(72, 136, 179);
+  font-size: 3rem;
+  text-shadow: -1px 0 2px rgb(63, 152, 194), 0 1px 2px rgb(13, 95, 143),
+    1px 0 2px rgb(17, 45, 110), 0 -1px 2px rgb(35, 77, 175);
+  transition: 0.3s ease-out;
 }
 
-div.big-project, div.small-project {
-    display: inline-block;
-    border: none;
-    /* background-color: rgb(224, 145, 145); */
-    text-align: left;
-    padding: 20px 20px;
-    font-family: 'Spartan';
-    color:rgb(255, 255, 255);
-    font-size: 3rem;
-    text-shadow: -1px 0 2px rgb(165, 49, 49), 0 1px  2px rgb(179, 39, 39), 1px 0  2px rgb(216, 44, 44), 0 -1px  2px rgb(199, 85, 85);
-    transition: .5s ease-in-out;
+div.about-text {
+  animation: aboutmove .9s ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: .5s;
 }
 
-div.big-project:hover, div.small-project:hover {
-    cursor: pointer;
-    transform: scale(1.10);
-    text-align: center;
-
+@keyframes aboutmove {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-300px);
+  }
 }
 
-div.github-div-style{
-    border-radius: 50px 50px 50px 50px!important;
-    width: 800px!important;
-    height: 400px!important;
-    background-color: rgb(197, 253, 211)!important;
-    box-shadow: -8px 1px 2px 1px rgb(8, 109, 17)!important;
+div.big-project,
+div.small-project {
+  display: inline-block;
+  border: none;
+  /* background-color: rgb(224, 145, 145); */
+  text-align: left;
+  padding: 20px 20px;
+  font-family: "Spartan";
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  text-shadow: -1px 0 2px rgb(165, 49, 49), 0 1px 2px rgb(179, 39, 39),
+    1px 0 2px rgb(216, 44, 44), 0 -1px 2px rgb(199, 85, 85);
+  transition: 0.5s ease-in-out;
 }
 
-div.projects-style{
-    border-radius: 50%!important;
-    transform: scale(1.5);
-    background-color: rgb(224, 145, 145)!important;
-    box-shadow: -8px 1px 2px 1px rgb(158, 19, 12)!important;
+div.big-project:hover,
+div.small-project:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  text-align: center;
 }
 
-div.about-div-style{
-    border-radius: 50px 50px 50px 50px!important;
-    width: 400px!important;
-    height: 800px!important;
-    background-color: rgb(176, 228, 252)!important;
-    box-shadow: -8px 1px 2px 1px rgb(60, 87, 175)!important;
+div.github-div-style {
+  border-radius: 50px 50px 50px 50px !important;
+  width: 800px !important;
+  height: 400px !important;
+  background-color: rgb(197, 253, 211) !important;
+  box-shadow: -8px 1px 2px 1px rgb(8, 109, 17) !important;
+}
+
+div.projects-style {
+  border-radius: 50% !important;
+  transform: scale(1.5);
+  background-color: rgb(224, 145, 145) !important;
+  box-shadow: -8px 1px 2px 1px rgb(158, 19, 12) !important;
+}
+
+div.about-div-style {
+  border-radius: 50px 50px 50px 50px !important;
+  width: 400px !important;
+  height: 800px !important;
+  background-color: rgb(176, 228, 252) !important;
+  box-shadow: -8px 1px 2px 1px rgb(60, 87, 175) !important;
 }
