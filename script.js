@@ -9,6 +9,8 @@ const backArrowGithub = document.getElementById("backarrow-github");
 const backArrowAboutMe = document.getElementById("backarrow-aboutme");
 const githubIcon = document.getElementById("github-icon");
 const aboutTitle = document.getElementById("about");
+const homePageTitle = document.getElementById("home-page-title");
+const homePageFooter = document.getElementById("home-page-footer");
 const body = document.body;
 console.log(mainContainer);
 
@@ -23,6 +25,8 @@ projectsBTN.addEventListener("click", () => {
   githubBTN.style.opacity = 0;
   aboutBTN.style.opacity = 0;
   body.classList.add("projects-style");
+  homePageTitle.classList.add("hide");
+  homePageFooter.classList.add("hide");
   backArrowProjects.classList.add("backarrow-projects");
   mainContainer.classList.add("projects-style");
   projectsContainer.classList.add("show-projects");
@@ -36,6 +40,8 @@ backArrowProjects.addEventListener("click", () => {
   mainContainer.classList.remove("projects-style");
   projectsContainer.classList.remove("show-projects");
   backArrowProjects.classList.remove("backarrow-projects");
+  homePageTitle.classList.remove("hide");
+  homePageFooter.classList.remove("hide");
 });
 
 githubBTN.addEventListener("click", () => {
@@ -47,6 +53,8 @@ githubBTN.addEventListener("click", () => {
   backArrowGithub.classList.add("backarrow-github");
   githubContainer.classList.add("show-github");
   githubIcon.classList.add("show-github-icon");
+  homePageTitle.classList.add("hide");
+  homePageFooter.classList.add("hide");
 });
 
 backArrowGithub.addEventListener("click", () => {
@@ -57,6 +65,8 @@ backArrowGithub.addEventListener("click", () => {
   githubContainer.classList.remove("show-github");
   body.classList.remove("github-style");
   backArrowGithub.classList.remove("backarrow-github");
+  homePageTitle.classList.remove("hide");
+  homePageFooter.classList.remove("hide");
 });
 
 aboutBTN.addEventListener("click", () => {
@@ -68,6 +78,8 @@ aboutBTN.addEventListener("click", () => {
   mainContainer.classList.add("about-div-style");
   backArrowAboutMe.classList.add("backarrow-aboutme");
   aboutContainer.classList.add("show-about");
+  homePageTitle.classList.add("hide");
+  homePageFooter.classList.add("hide");
 });
 
 backArrowAboutMe.addEventListener("click", () => {
@@ -79,6 +91,8 @@ backArrowAboutMe.addEventListener("click", () => {
   body.classList.remove("about-style");
   backArrowAboutMe.classList.remove("backarrow-aboutme");
   mainContainer.classList.remove("about-div-style");
+  homePageTitle.classList.remove("hide");
+  homePageFooter.classList.remove("hide");
 });
 
 bigProjectsBTN.addEventListener("click", () => {
