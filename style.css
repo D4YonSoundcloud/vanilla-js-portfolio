@@ -31,6 +31,10 @@ body.about-style {
   background-color: var(--background-color, rgb(84, 153, 170));
 }
 
+body.big-projects-style {
+    background-color: var(--background-color, rgb(29, 29, 29));
+  }
+
 #main-container {
   display: flex;
   flex-direction: column;
@@ -141,10 +145,16 @@ div.button:hover {
     transform: translateY(150px) scale(2.5);
     transition: 0.4s ease;
 }
-.fas.fa-long-arrow-alt-left.backarrow-projects:hover {
+.fas.fa-long-arrow-alt-left.backarrow-projects.big {
     opacity: 0.7;
-    color: rgb(199, 95, 95);
-    transform: translateY(150px) scale(3);
+    color: rgb(53, 53, 53);
+    transform: translateY(200px) scale(2.5);
+    transition: 0.4s ease;
+}
+.fas.fa-long-arrow-alt-left.backarrow-projects.big:hover {
+    opacity: 0.7;
+    color: rgb(10, 10, 10);
+    transform: translateY(200px) scale(3);
 
 }
 .fas.fa-long-arrow-alt-left.backarrow-github {
@@ -226,8 +236,8 @@ div.about-text {
   }
 }
 
-div.big-project,
-div.small-project {
+div.big-projects,
+div.small-projects {
   display: inline-block;
   border: none;
   /* background-color: rgb(224, 145, 145); */
@@ -241,8 +251,44 @@ div.small-project {
   transition: 0.5s ease-in-out;
 }
 
-div.big-project:hover,
-div.small-project:hover {
+
+div.big-projects:hover,
+div.small-projects:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  text-align: center;
+}
+div.big-projects-container{
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    transition: 1s ease-in;
+
+}
+div.big-projects-container.show-big-projects{
+    opacity: 1;
+    z-index: 2;
+}
+
+div.big-project{
+    display: inline-block;
+  border: none;
+  /* background-color: rgb(224, 145, 145); */
+  text-align: left;
+  padding: 50px 60px;
+  font-family: "Spartan";
+  color: rgb(228, 228, 228);
+  font-size: 2.5rem;
+  text-shadow: -1px 0 2px rgb(0, 0, 0), 0 1px 2px rgb(0, 0, 0),
+    1px 0 2px rgb(0, 0, 0), 0 -1px 2px rgb(0, 0, 0);
+transition: 0.4s ease;
+}
+
+div.big-project:hover {
   cursor: pointer;
   transform: scale(1.1);
   text-align: center;
@@ -263,6 +309,14 @@ div.projects-style {
   box-shadow: -8px 1px 2px 1px rgb(158, 19, 12) !important;
 }
 
+div.big-projects-style {
+    border-radius: 50px 50px 50px 50px !important;  
+    width: 350px!important;
+    height: 500px!important;
+    background-color: rgb(42, 42, 42) !important;
+    box-shadow: 5px 4px 2px 1px rgb(19, 18, 18) !important;
+
+}
 div.about-div-style {
   border-radius: 50px 50px 50px 50px !important;
   width: 400px !important;

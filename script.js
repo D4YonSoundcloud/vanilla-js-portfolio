@@ -2,6 +2,7 @@ const mainContainer = document.getElementById('main-container');
 const projectsContainer = document.getElementById('projects-container');
 const githubContainer = document.getElementById('github-container');
 const aboutContainer = document.getElementById('about-container');
+const bigProjectsContainer = document.getElementById('big-projects-container');
 const backArrowProjects = document.getElementById('backarrow-projects');
 const backArrowGithub = document.getElementById('backarrow-github');
 const backArrowAboutMe = document.getElementById('backarrow-aboutme');
@@ -12,6 +13,9 @@ console.log(mainContainer);
 const projectsBTN = document.getElementById('projects-btn');
 const githubBTN = document.getElementById('github-btn');
 const aboutBTN = document.getElementById('about-btn');
+const bigProjectsBTN = document.getElementById('big-projects-btn');
+const smallProjectsBTN = document.getElementById('small-projects-btn');
+
 
 projectsBTN.addEventListener('click', () => {
     projectsBTN.style.opacity = 0;
@@ -75,4 +79,15 @@ backArrowAboutMe.addEventListener('click', () => {
     backArrowAboutMe.classList.remove('backarrow-aboutme');
     mainContainer.classList.remove('about-div-style');
     aboutContainer.classList.remove('show-about');
+})
+
+bigProjectsBTN.addEventListener('click', () => {
+    bigProjectsBTN.style.opacity = 0;
+    smallProjectsBTN.style.opacity = 0;
+    body.classList.add('big-projects-style');
+    backArrowProjects.classList.add('big');
+    console.log('working');
+    mainContainer.classList.add('big-projects-style');
+    bigProjectsContainer.classList.add('show-big-projects');
+    console.log('done');
 })
