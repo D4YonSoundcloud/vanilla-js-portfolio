@@ -1,0 +1,22 @@
+{
+  "name": "vanilla-js-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D4YonSoundcloud/vanilla-js-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D4YonSoundcloud/vanilla-js-portfolio/issues"
+  },
+  "homepage": "https://D4YonSoundcloud.github.io/vanilla-js-portfolio#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  }
+}
