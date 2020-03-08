@@ -863,8 +863,8 @@ div.small-project-style1 {
   border-radius: 50px 50px 50px 50px !important;
   width: 350px !important;
   height: 400px !important;
-  background-color: rgb(241, 197, 241) !important;
-  box-shadow: -4px 2px 3px 1px rgb(213, 120, 220) !important;
+  background-color: rgb(233, 167, 233) !important;
+  box-shadow: -4px -2px 3px 1px rgb(81, 34, 85) !important;
 }
 
 div.small-project-style2 {
@@ -888,7 +888,7 @@ div.small-project-style4 {
     width: 350px !important;
     height: 400px !important;
     background-color: rgb(226, 226, 226) !important;
-    box-shadow: -4px 10px 2px 1px rgb(71, 71, 71) !important;
+    box-shadow: 4px 10px 2px 1px rgb(71, 71, 71) !important;
   }
 
 div.about-div-style {

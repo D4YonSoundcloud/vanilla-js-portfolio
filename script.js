@@ -1,19 +1,29 @@
+//main container that constanstly shifts through the adding and removing off classes
 const mainContainer = document.getElementById("main-container");
+//second layer container with small and big projects
 const projectsContainer = document.getElementById("projects-container");
+//second layer container with github info and link
 const githubContainer = document.getElementById("github-container");
+//second layer container with mini bio and skills
 const aboutContainer = document.getElementById("about-container");
+//third layer container for all the big projects
 const bigProjectsContainer = document.getElementById("big-projects-container");
+//third layer container for all the small projects
 const smallProjectsContainer = document.getElementById(
   "small-projects-container"
 );
+//fourth layer containers for each small project
 const smallProjectContainer1 = document.getElementById("small-project-container1");
 const smallProjectContainer2 = document.getElementById("small-project-container2");
 const smallProjectContainer3 = document.getElementById("small-project-container3");
 const smallProjectContainer4 = document.getElementById("small-project-container4");
+//fourth layer container for each big project
 const bigProjectContainer1 = document.getElementById("big-project-container1");
 const bigProjectContainer2 = document.getElementById("big-project-container2");
 const bigProjectContainer3 = document.getElementById("big-project-container3");
+//backarrows for both small and big project
 const backArrowProjects = document.getElementById("backarrow-projects");
+//backarrows for big projects and each big project
 const backArrowBigProjects = document.getElementById("backarrow-big-projects");
 const backArrowBigProject = document.getElementById("backarrow-big-project");
 const backArrowBigProject2 = document.getElementById("backarrow-big-project2");
@@ -21,24 +31,36 @@ const backArrowBigProject3 = document.getElementById("backarrow-big-project3");
 const backArrowSmallProjects = document.getElementById(
   "backarrow-small-projects"
 );
+//backarrows for each small project
 const backArrowSmallProject1 = document.getElementById("backarrow-small-project1");
 const backArrowSmallProject2 = document.getElementById("backarrow-small-project2");
 const backArrowSmallProject3 = document.getElementById("backarrow-small-project3");
 const backArrowSmallProject4 = document.getElementById("backarrow-small-project4");
+//backarrow for github
 const backArrowGithub = document.getElementById("backarrow-github");
+//backarrow for about 
 const backArrowAboutMe = document.getElementById("backarrow-aboutme");
+//github icon
 const githubIcon = document.getElementById("github-icon");
+//title for about page
 const aboutTitle = document.getElementById("about");
+//"Matt Day" on the homepage
 const homePageTitle = document.getElementById("home-page-title");
+//"Web Developer on the homepage"
 const homePageFooter = document.getElementById("home-page-footer");
 const body = document.body;
 console.log(mainContainer);
 
+//button for small and big projects
 const projectsBTN = document.getElementById("projects-btn");
+//button to see github 
 const githubBTN = document.getElementById("github-btn");
+//button to see about 
 const aboutBTN = document.getElementById("about-btn");
+//button to see big or small projects
 const bigProjectsBTN = document.getElementById("big-projects-btn");
 const smallProjectsBTN = document.getElementById("small-projects-btn");
+//buttons to see each individual project
 const bigProjectBTN1 = document.getElementById("project1");
 const bigProjectBTN2 = document.getElementById("project2");
 const bigProjectBTN3 = document.getElementById("project3");
@@ -47,6 +69,7 @@ const smallProjectBTN2 = document.getElementById("small-project2");
 const smallProjectBTN3 = document.getElementById("small-project3");
 const smallProjectBTN4 = document.getElementById("small-project4");
 
+//functions that add and remove classes, causing the animations
 projectsBTN.addEventListener("click", () => {
   projectsBTN.style.opacity = 0;
   githubBTN.style.opacity = 0;
@@ -259,7 +282,7 @@ bigProjectBTN2.addEventListener("click", () => {
     smallProjectBTN3.style.opacity = 0;
     smallProjectBTN4.style.opacity = 0;
     body.classList.add("small-project-style1");
-    backArrowBigProjects.classList.remove("small");
+    backArrowSmallProjects.classList.remove("small");
     backArrowSmallProject1.classList.add("small-project1");
     console.log("working");
     smallProjectBTN1.classList.add('animate-small-btn-1');
@@ -288,7 +311,7 @@ bigProjectBTN2.addEventListener("click", () => {
     smallProjectBTN3.style.opacity = 0;
     smallProjectBTN4.style.opacity = 0;
     body.classList.add("small-project-style2");
-    backArrowBigProjects.classList.remove("small");
+    backArrowSmallProjects.classList.remove("small");
     backArrowSmallProject2.classList.add("small-project2");
     console.log("working");
     smallProjectBTN2.classList.add('animate-small-btn-2');
