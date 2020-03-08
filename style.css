@@ -36,6 +36,18 @@ body.big-projects-style {
   background-color: var(--background-color, rgb(29, 29, 29));
 }
 
+body.big-project-style {
+    background-color: var(--background-color, rgb(53, 9, 43));
+  }
+
+  body.big-project-style2 {
+    background-color: var(--background-color, rgb(160, 136, 60));
+  }
+
+  body.big-project-style3 {
+    background-color: var(--background-color, rgb(32, 68, 88));
+  }
+
 body.small-projects-style {
   background-color: var(--background-color, rgb(204, 130, 60));
 }
@@ -156,17 +168,50 @@ div.button:hover {
   transform: translateY(150px) scale(3);
   transition: 0.4s ease;
 }
-.fas.fa-long-arrow-alt-left.big {
+.fas.fa-long-arrow-alt-left.big-project {
   opacity: 0.9;
-  color: rgb(53, 53, 53);
+  color: rgb(161, 71, 177);
   transform: translateY(45px) scale(2.5);
   transition: 0.4s ease;
 }
-.fas.fa-long-arrow-alt-left.big:hover {
+.fas.fa-long-arrow-alt-left.big-project:hover {
   opacity: 1;
-  color: rgb(10, 10, 10);
+  color: rgb(117, 35, 128);
   transform: translateY(45px) scale(3);
 }
+.fas.fa-long-arrow-alt-left.big-project2 {
+    opacity: 0.9;
+    color: rgb(223, 215, 115);
+    transform: translateY(45px) scale(2.5);
+    transition: 0.4s ease;
+  }
+  .fas.fa-long-arrow-alt-left.big-project2:hover {
+    opacity: 1;
+    color: rgb(187, 189, 69);
+    transform: translateY(45px) scale(3);
+  }
+  .fas.fa-long-arrow-alt-left.big-project3 {
+    opacity: 0.9;
+    color: rgb(53, 131, 155);
+    transform: translateY(45px) scale(2.5);
+    transition: 0.4s ease;
+  }
+  .fas.fa-long-arrow-alt-left.big-project3:hover {
+    opacity: 1;
+    color: rgb(21, 57, 82);
+    transform: translateY(45px) scale(3);
+  }
+.fas.fa-long-arrow-alt-left.big {
+    opacity: 0.9;
+    color: rgb(53, 53, 53);
+    transform: translateY(45px) scale(2.5);
+    transition: 0.4s ease;
+  }
+  .fas.fa-long-arrow-alt-left.big:hover {
+    opacity: 1;
+    color: rgb(10, 10, 10);
+    transform: translateY(45px) scale(3);
+  }
 .fas.fa-long-arrow-alt-left.small {
   opacity: 0.9;
   color: rgb(218, 153, 101);
@@ -252,7 +297,7 @@ div.small-projects {
   text-align: left;
   padding: 20px 20px;
   font-family: "Spartan";
-  color: rgb(224, 162, 162);
+  color: rgb(226, 176, 176);
   font-size: 3.5rem;
   text-shadow: -1px 0 3.5px rgb(138, 39, 39), 0 1px 3.5px rgb(112, 18, 18),
     1px 0 3.5px rgb(131, 32, 32), 0 -1px 3.5px rgb(117, 57, 57);
@@ -263,6 +308,7 @@ div.big-projects:hover,
 div.small-projects:hover {
   cursor: pointer;
   transform: scale(1.1);
+  color: rgb(175, 105, 105);
   text-shadow: -1px 0 5px rgb(93, 19, 19), 0 1px 5px rgb(73, 12, 12),
     1px 0 5px rgb(63, 9, 9), 0 -1px 5px rgb(65, 23, 23);
   text-align: center;
@@ -282,6 +328,47 @@ div.big-projects-container.show-big-projects {
   z-index: 2;
 }
 
+div.big-project-container {
+    position: absolute;
+    opacity: 0;
+    display: flex;
+    width: 800px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    transition: 1s ease-in;
+  }
+  div.big-project-container.show-big-project {
+    opacity: 1;
+    z-index: 2;
+  }
+  
+div.big-project.animate-big-btn-1{
+    color: rgb(179, 92, 174);
+    transform: translateY(-100px)
+}
+
+div.big-project.animate-big-btn-1:hover{
+    transform: translateY(-100px) scale(1.1)
+}
+
+div.big-project.animate-big-btn-2{
+    color: rgb(88, 88, 88);
+    transform: translateY(-200px)
+}
+
+div.big-project.animate-big-btn-2:hover{
+    transform: translateY(-200px) scale(1.1)
+}
+div.big-project.animate-big-btn-3{
+    color: rgb(38, 115, 136);
+    transform: translateY(-300px)
+}
+
+div.big-project.animate-big-btn-3:hover{
+    transform: translateY(-300px) scale(1.1)
+}
 div.small-projects-container {
   position: absolute;
   opacity: 0;
@@ -301,22 +388,129 @@ div.big-project {
   display: inline-block;
   border: none;
   /* background-color: rgb(224, 145, 145); */
-  text-align: left;
+  text-align: center;
   padding: 50px 60px;
   font-family: "Spartan";
-  color: rgb(228, 228, 228);
+  color: rgb(126, 126, 126);
   font-size: 2.5rem;
   text-shadow: -1px 0 2px rgb(0, 0, 0), 0 1px 2px rgb(0, 0, 0),
     1px 0 2px rgb(0, 0, 0), 0 -1px 2px rgb(0, 0, 0);
-  transition: 0.4s ease;
+  transition: 0.6s ease;
 }
 
+div.big-project-container.show-big-projects {
+    opacity: 1;
+    z-index: 2;
+  }
 div.big-project:hover {
   cursor: pointer;
+  color: rgb(236, 236, 236);
+  text-shadow: -1px 0 1px rgb(73, 73, 73), 0 1px 1px rgb(56, 56, 56),
+    1px 0 1px rgb(87, 86, 86), 0 -1px 1px rgb(122, 122, 122);
   transform: scale(1.1);
   text-align: center;
 }
 
+div.big-project-info {
+    display: inline-block;
+    border: none;
+    /* background-color: rgb(224, 145, 145); */
+    text-align: center;
+    padding: 20px 20px;
+    font-family: "Spartan";
+    color: rgb(151, 73, 147);
+    font-size: 1.25rem;
+    text-shadow: -1px 0 1px rgb(87, 46, 104), 0 1px 1px rgb(84, 14, 97),
+      1px 0 1px rgb(91, 17, 104), 0 -1px 1px rgb(117, 36, 128);
+    transition: 0.6s ease;
+  }
+
+  div.big-project-info:hover {
+    cursor: default;
+  color:rgb(109, 43, 121);
+  transform: scale(1.1) !important;
+}
+  a.big-project-github{
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-align: center;
+    color: rgb(117, 67, 119);
+    text-shadow: -1px 0 1px rgb(59, 4, 57), 0 1px 1px rgb(59, 5, 57),
+      1px 0 1px rgb(71, 15, 62), 0 -1px 1px rgb(75, 10, 71);
+    transition: 0.6s ease;
+  }
+
+  a.big-project-github:hover {
+    transform: scale(1.2) !important;
+  }
+
+  div.big-project-info2 {
+    display: inline-block;
+    border: none;
+    /* background-color: rgb(224, 145, 145); */
+    text-align: center;
+    padding: 20px 20px;
+    font-family: "Spartan";
+    color: rgb(41, 37, 3);
+    font-size: 1.25rem;
+    text-shadow: -1px 0 1px rgb(63, 62, 62), 0 1px 1px rgb(77, 76, 76),
+      1px 0 1px rgb(109, 109, 109), 0 -1px 1px rgb(51, 51, 51);
+    transition: 0.6s ease;
+  }
+
+  div.big-project-info2:hover {
+    cursor: default;
+  color:rgb(90, 83, 21);
+  transform: scale(1.1) !important;
+}
+  a.big-project-github2{
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-align: center;
+    color: rgb(32, 29, 3);
+    text-shadow: -1px 0 1px rgb(0, 0, 0), 0 1px 1px rgb(0, 0, 0),
+      1px 0 1px rgb(0, 0, 0), 0 -1px 1px rgb(0, 0, 0);
+    transition: 0.6s ease;
+  }
+
+  a.big-project-github2:hover {
+    transform: scale(1.2) !important;
+  }
+
+  div.big-project-info3 {
+    display: inline-block;
+    border: none;
+    /* background-color: rgb(224, 145, 145); */
+    text-align: center;
+    padding: 20px 20px;
+    font-family: "Spartan";
+    color: rgb(20, 92, 114);
+    font-size: 1.25rem;
+    text-shadow: -1px 0 1px rgb(54, 117, 133), 0 1px 1px rgb(46, 119, 141),
+      1px 0 1px rgb(36, 106, 128), 0 -1px 1px rgb(28, 134, 138);
+    transition: 0.6s ease;
+  }
+
+  a.big-project-github3{
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-align: center;
+    color: rgb(39, 98, 116);
+    text-shadow: -1px 0 1px rgb(36, 74, 105), 0 1px 1px rgb(52, 102, 131),
+      1px 0 1px rgb(8, 52, 78), 0 -1px 1px rgba(27, 54, 97, 0);
+    transition: 0.6s ease;
+  }
+
+  div.big-project-info3:hover {
+      cursor: default;
+    color: rgb(18, 64, 78);
+    transform: scale(1.1) !important;
+  }
+
+  a.big-project-github3:hover {
+    color: rgb(18, 64, 78);
+    transform: scale(1.2) !important;
+  }
 div.small-project {
   display: inline-block;
   border: none;
@@ -335,6 +529,7 @@ div.small-project:hover {
   cursor: pointer;
   transform: scale(1.1);
   text-align: center;
+  color: rgba(161, 105, 59, 0.904);
   text-shadow: 1px 0 1px rgb(129, 52, 21), 0 -1px 1px rgb(119, 55, 19),
     0px 1 1px rgb(98, 52, 9), 0 1px 1px rgb(102, 52, 11);
 }
@@ -361,6 +556,30 @@ div.big-projects-style {
   background-color: rgb(42, 42, 42) !important;
   box-shadow: 5px 4px 2px 1px rgb(19, 18, 18) !important;
 }
+
+div.big-project-style {
+    border-radius: 200px 50px 200px 50px !important;
+    width: 700px !important;
+    height: 500px !important;
+    background-color: rgb(214, 158, 211) !important;
+    box-shadow: 4px 10px 2px 1px rgb(62, 22, 57) !important;
+  }
+
+  div.big-project-style2 {
+    border-radius: 50px 200px 50px 200px !important;
+    width: 700px !important;
+    height: 500px !important;
+    background-color: rgb(243, 233, 141) !important;
+    box-shadow: 4px 10px 2px 1px rgb(62, 61, 22) !important;
+  }
+
+  div.big-project-style3 {
+    border-radius: 200px 200px 500px 500px !important;
+    width: 700px !important;
+    height: 500px !important;
+    background-color: rgb(171, 233, 233) !important;
+    box-shadow: -4px 10px 2px 1px rgb(21, 153, 153) !important;
+  }
 
 div.small-projects-style {
   border-radius: 50px 200px 50px 200px !important;
