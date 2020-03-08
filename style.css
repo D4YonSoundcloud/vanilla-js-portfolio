@@ -203,35 +203,35 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.big-project {
   opacity: 0.9;
   color: rgb(161, 71, 177);
-  transform: translateY(45px) scale(3);
+  transform: translateY(30px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.big-project:hover {
   opacity: 1;
   color: rgb(117, 35, 128);
-  transform: translateY(45px) scale(3.5);
+  transform: translateY(30px) scale(3.5);
 }
 .fas.fa-long-arrow-alt-left.big-project2 {
   opacity: 0.9;
   color: rgb(223, 215, 115);
-  transform: translateY(45px) scale(3);
+  transform: translateY(30px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.big-project2:hover {
   opacity: 1;
   color: rgb(187, 189, 69);
-  transform: translateY(45px) scale(3.5);
+  transform: translateY(30px) scale(3.5);
 }
 .fas.fa-long-arrow-alt-left.big-project3 {
   opacity: 0.9;
   color: rgb(53, 131, 155);
-  transform: translateY(45px) scale(3);
+  transform: translateY(30px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.big-project3:hover {
   opacity: 1;
   color: rgb(21, 57, 82);
-  transform: translateY(45px) scale(3.5);
+  transform: translateY(30px) scale(3.5);
 }
 .fas.fa-long-arrow-alt-left.big {
   opacity: 0.9;
@@ -258,37 +258,37 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.small-project1 {
   opacity: 0.9;
   color: rgb(146, 41, 149);
-  transform: translateY(90px) scale(3);
+  transform: translateY(80px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.small-project1:hover {
   opacity: 1;
   color: rgb(119, 26, 111);
-  transform: translateY(90px) scale(3.5);
+  transform: translateY(80px) scale(3.5);
 }
 
 .fas.fa-long-arrow-alt-left.small-project2 {
   opacity: 0.9;
   color: rgb(56, 148, 99);
-  transform: translateY(90px) scale(3);
+  transform: translateY(80px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.small-project2:hover {
   opacity: 1;
   color: rgb(18, 95, 41);
-  transform: translateY(90px) scale(3.5);
+  transform: translateY(80px) scale(3.5);
 }
 
 .fas.fa-long-arrow-alt-left.small-project3 {
   opacity: 0.9;
   color: rgb(56, 107, 148);
-  transform: translateY(90px) scale(3);
+  transform: translateY(80px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.small-project3:hover {
   opacity: 1;
   color: rgb(10, 44, 83);
-  transform: translateY(90px) scale(3.5);
+  transform: translateY(80px) scale(3.5);
 }
 .fas.fa-long-arrow-alt-left.small-project4 {
     opacity: 0.9;
@@ -445,20 +445,20 @@ div.big-project-container.show-big-project {
 
 div.big-project.animate-big-btn-1 {
   color: rgb(179, 92, 174);
-  transform: translateY(-100px);
+  transform: translateY(-40px);
 }
 
 div.big-project.animate-big-btn-1:hover {
-  transform: translateY(-100px) scale(1.1);
+  transform: translateY(-40px) scale(1.1);
 }
 
 div.big-project.animate-big-btn-2 {
   color: rgb(88, 88, 88);
-  transform: translateY(-200px);
+  transform: translateY(-150px);
 }
 
 div.big-project.animate-big-btn-2:hover {
-  transform: translateY(-200px) scale(1.1);
+  transform: translateY(-150px) scale(1.1);
 }
 div.big-project.animate-big-btn-3 {
   color: rgb(38, 115, 136);
@@ -945,7 +945,7 @@ h1 {
   display: inline-block;
   border: none;
   /* background-color: rgb(224, 145, 145); */
-  text-align: left;
+  text-align: center;
   font-family: "Spartan";
   color: rgb(122, 122, 122);
   font-size: 2rem;
@@ -954,6 +954,9 @@ h1 {
   transition: 0.5s ease;
 }
 
+h1#home-page-title{
+  transform: translateY(10px);
+}
 h1.hide {
   opacity: 0;
 }
@@ -1030,7 +1033,14 @@ div.github-profile-bio {
   color: rgb(87, 172, 94);
   font-size: 1rem;
   transform: translateY(30px);
-  text-shadow: -1px 0 0.5px rgb(31, 83, 24), 0 1px 0.5px rgb(21, 97, 50),
-    1px 0 0.5px rgb(26, 110, 51), 0 -1px 0.5px rgb(45, 126, 72);
+  text-shadow: -1px 0 5px rgba(31, 83, 24, 0.171),-1px 0 5px rgba(21, 97, 50, 0.075),
+    1px 0 5px rgba(26, 110, 51, 0.137), 0 -1px 5px rgba(45, 126, 72, 0.239);
   transition: 0.5s ease;
+}
+div.github-profile-bio:hover{
+  cursor: default;
+  color: rgb(47, 117, 53);
+  transform: translateY(30px) scale(1.05);
+  text-shadow:-1px 0 5px rgba(31, 83, 24, 0.459),-1px 0 5px rgba(21, 97, 50, 0.486),
+    1px 0 5px rgba(26, 110, 47, 0.527), 0 -1px 5px rgba(45, 126, 72, 0.685);
 }
