@@ -6,6 +6,10 @@ const bigProjectsContainer = document.getElementById("big-projects-container");
 const smallProjectsContainer = document.getElementById(
   "small-projects-container"
 );
+const smallProjectContainer1 = document.getElementById("small-project-container1");
+const smallProjectContainer2 = document.getElementById("small-project-container2");
+const smallProjectContainer3 = document.getElementById("small-project-container3");
+const smallProjectContainer4 = document.getElementById("small-project-container4");
 const bigProjectContainer1 = document.getElementById("big-project-container1");
 const bigProjectContainer2 = document.getElementById("big-project-container2");
 const bigProjectContainer3 = document.getElementById("big-project-container3");
@@ -17,6 +21,10 @@ const backArrowBigProject3 = document.getElementById("backarrow-big-project3");
 const backArrowSmallProjects = document.getElementById(
   "backarrow-small-projects"
 );
+const backArrowSmallProject1 = document.getElementById("backarrow-small-project1");
+const backArrowSmallProject2 = document.getElementById("backarrow-small-project2");
+const backArrowSmallProject3 = document.getElementById("backarrow-small-project3");
+const backArrowSmallProject4 = document.getElementById("backarrow-small-project4");
 const backArrowGithub = document.getElementById("backarrow-github");
 const backArrowAboutMe = document.getElementById("backarrow-aboutme");
 const githubIcon = document.getElementById("github-icon");
@@ -34,6 +42,10 @@ const smallProjectsBTN = document.getElementById("small-projects-btn");
 const bigProjectBTN1 = document.getElementById("project1");
 const bigProjectBTN2 = document.getElementById("project2");
 const bigProjectBTN3 = document.getElementById("project3");
+const smallProjectBTN1 = document.getElementById("small-project1");
+const smallProjectBTN2 = document.getElementById("small-project2");
+const smallProjectBTN3 = document.getElementById("small-project3");
+const smallProjectBTN4 = document.getElementById("small-project4");
 
 projectsBTN.addEventListener("click", () => {
   projectsBTN.style.opacity = 0;
@@ -240,4 +252,120 @@ bigProjectBTN2.addEventListener("click", () => {
     mainContainer.classList.remove("big-project-style3");
     mainContainer.classList.add("big-projects-style");
     bigProjectBTN3.classList.remove('animate-big-btn-3');
+  });
+
+  smallProjectBTN1.addEventListener("click", () => {
+    smallProjectBTN2.style.opacity = 0;
+    smallProjectBTN3.style.opacity = 0;
+    smallProjectBTN4.style.opacity = 0;
+    body.classList.add("small-project-style1");
+    backArrowBigProjects.classList.remove("small");
+    backArrowSmallProject1.classList.add("small-project1");
+    console.log("working");
+    smallProjectBTN1.classList.add('animate-small-btn-1');
+    mainContainer.classList.remove("small-projects-style");
+    mainContainer.classList.add("small-project-style1");
+    smallProjectContainer1.classList.add("show-small-project");
+    console.log("done");
+  });
+  
+  backArrowSmallProject1.addEventListener("click", () => {
+    smallProjectBTN2.style.opacity = 1;
+    smallProjectBTN3.style.opacity = 1;
+    smallProjectBTN4.style.opacity = 1;
+    body.classList.remove("small-project-style1");
+    body.classList.add("small-projects-style");
+    smallProjectContainer1.classList.remove("show-small-project");
+    backArrowSmallProject1.classList.remove("small-project1");
+    backArrowSmallProject1.classList.add("small");
+    mainContainer.classList.remove("small-project-style1");
+    mainContainer.classList.add("small-projects-style");
+    smallProjectBTN1.classList.remove('animate-small-btn-1');
+  });
+
+  smallProjectBTN2.addEventListener("click", () => {
+    smallProjectBTN1.style.opacity = 0;
+    smallProjectBTN3.style.opacity = 0;
+    smallProjectBTN4.style.opacity = 0;
+    body.classList.add("small-project-style2");
+    backArrowBigProjects.classList.remove("small");
+    backArrowSmallProject2.classList.add("small-project2");
+    console.log("working");
+    smallProjectBTN2.classList.add('animate-small-btn-2');
+    mainContainer.classList.remove("small-projects-style");
+    mainContainer.classList.add("small-project-style2");
+    smallProjectContainer2.classList.add("show-small-project");
+    console.log("done");
+  });
+  
+  backArrowSmallProject2.addEventListener("click", () => {
+    smallProjectBTN1.style.opacity = 1;
+    smallProjectBTN3.style.opacity = 1;
+    smallProjectBTN4.style.opacity = 1;
+    body.classList.remove("small-project-style2");
+    body.classList.add("small-projects-style");
+    smallProjectContainer2.classList.remove("show-small-project");
+    backArrowSmallProject2.classList.remove("small-project2");
+    backArrowSmallProject2.classList.add("small");
+    mainContainer.classList.remove("small-project-style2");
+    mainContainer.classList.add("small-projects-style");
+    smallProjectBTN2.classList.remove('animate-small-btn-2');
+  });
+
+  smallProjectBTN3.addEventListener("click", () => {
+    smallProjectBTN1.style.opacity = 0;
+    smallProjectBTN2.style.opacity = 0;
+    smallProjectBTN4.style.opacity = 0;
+    body.classList.add("small-project-style3");
+    backArrowSmallProjects.classList.remove("small");
+    backArrowSmallProject3.classList.add("small-project3");
+    console.log("working");
+    smallProjectBTN3.classList.add('animate-small-btn-3');
+    mainContainer.classList.remove("small-projects-style");
+    mainContainer.classList.add("small-project-style3");
+    smallProjectContainer3.classList.add("show-small-project");
+    console.log("done");
+  });
+  
+  backArrowSmallProject3.addEventListener("click", () => {
+    smallProjectBTN1.style.opacity = 1;
+    smallProjectBTN2.style.opacity = 1;
+    smallProjectBTN4.style.opacity = 1;
+    body.classList.remove("small-project-style3");
+    body.classList.add("small-projects-style");
+    smallProjectContainer3.classList.remove("show-small-project");
+    backArrowSmallProject3.classList.remove("small-project3");
+    backArrowSmallProjects.classList.add("small");
+    mainContainer.classList.remove("small-project-style3");
+    mainContainer.classList.add("small-projects-style");
+    smallProjectBTN3.classList.remove('animate-small-btn-3');
+  });
+
+  smallProjectBTN4.addEventListener("click", () => {
+    smallProjectBTN1.style.opacity = 0;
+    smallProjectBTN2.style.opacity = 0;
+    smallProjectBTN3.style.opacity = 0;
+    body.classList.add("small-project-style4");
+    backArrowSmallProjects.classList.remove("small");
+    backArrowSmallProject4.classList.add("small-project4");
+    console.log("working");
+    smallProjectBTN4.classList.add('animate-small-btn-4');
+    mainContainer.classList.remove("small-projects-style");
+    mainContainer.classList.add("small-project-style4");
+    smallProjectContainer4.classList.add("show-small-project");
+    console.log("done");
+  });
+  
+  backArrowSmallProject4.addEventListener("click", () => {
+    smallProjectBTN1.style.opacity = 1;
+    smallProjectBTN2.style.opacity = 1;
+    smallProjectBTN3.style.opacity = 1;
+    body.classList.remove("small-project-style4");
+    body.classList.add("small-projects-style");
+    smallProjectContainer4.classList.remove("show-small-project");
+    backArrowSmallProject4.classList.remove("small-project4");
+    backArrowSmallProjects.classList.add("small");
+    mainContainer.classList.remove("small-project-style4");
+    mainContainer.classList.add("small-projects-style");
+    smallProjectBTN4.classList.remove('animate-small-btn-4');
   });
