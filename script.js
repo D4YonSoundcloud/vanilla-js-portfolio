@@ -13,10 +13,18 @@ const smallProjectsContainer = document.getElementById(
   "small-projects-container"
 );
 //fourth layer containers for each small project
-const smallProjectContainer1 = document.getElementById("small-project-container1");
-const smallProjectContainer2 = document.getElementById("small-project-container2");
-const smallProjectContainer3 = document.getElementById("small-project-container3");
-const smallProjectContainer4 = document.getElementById("small-project-container4");
+const smallProjectContainer1 = document.getElementById(
+  "small-project-container1"
+);
+const smallProjectContainer2 = document.getElementById(
+  "small-project-container2"
+);
+const smallProjectContainer3 = document.getElementById(
+  "small-project-container3"
+);
+const smallProjectContainer4 = document.getElementById(
+  "small-project-container4"
+);
 //fourth layer container for each big project
 const bigProjectContainer1 = document.getElementById("big-project-container1");
 const bigProjectContainer2 = document.getElementById("big-project-container2");
@@ -32,30 +40,40 @@ const backArrowSmallProjects = document.getElementById(
   "backarrow-small-projects"
 );
 //backarrows for each small project
-const backArrowSmallProject1 = document.getElementById("backarrow-small-project1");
-const backArrowSmallProject2 = document.getElementById("backarrow-small-project2");
-const backArrowSmallProject3 = document.getElementById("backarrow-small-project3");
-const backArrowSmallProject4 = document.getElementById("backarrow-small-project4");
+const backArrowSmallProject1 = document.getElementById(
+  "backarrow-small-project1"
+);
+const backArrowSmallProject2 = document.getElementById(
+  "backarrow-small-project2"
+);
+const backArrowSmallProject3 = document.getElementById(
+  "backarrow-small-project3"
+);
+const backArrowSmallProject4 = document.getElementById(
+  "backarrow-small-project4"
+);
 //backarrow for github
 const backArrowGithub = document.getElementById("backarrow-github");
-//backarrow for about 
+//backarrow for about
 const backArrowAboutMe = document.getElementById("backarrow-aboutme");
 //github icon
 const githubIcon = document.getElementById("github-icon");
+const LinkedInIcon = document.getElementById("li-icon");
 //title for about page
 const aboutTitle = document.getElementById("about");
 //"Matt Day" on the homepage
 const homePageTitle = document.getElementById("home-page-title");
 //"Web Developer on the homepage"
 const homePageFooter = document.getElementById("home-page-footer");
+const homePageContact = document.getElementById("home-page-contact");
 const body = document.body;
 console.log(mainContainer);
 
 //button for small and big projects
 const projectsBTN = document.getElementById("projects-btn");
-//button to see github 
+//button to see github
 const githubBTN = document.getElementById("github-btn");
-//button to see about 
+//button to see about
 const aboutBTN = document.getElementById("about-btn");
 //button to see big or small projects
 const bigProjectsBTN = document.getElementById("big-projects-btn");
@@ -77,6 +95,8 @@ projectsBTN.addEventListener("click", () => {
   body.classList.add("projects-style");
   homePageTitle.classList.add("hide");
   homePageFooter.classList.add("hide");
+  homePageContact.classList.add("hide-contact");
+  LinkedInIcon.classList.add("hide-li-icon");
   backArrowProjects.classList.add("backarrow-projects");
   mainContainer.classList.add("projects-style");
   projectsContainer.classList.add("show-projects");
@@ -92,6 +112,8 @@ backArrowProjects.addEventListener("click", () => {
   backArrowProjects.classList.remove("backarrow-projects");
   homePageTitle.classList.remove("hide");
   homePageFooter.classList.remove("hide");
+  homePageContact.classList.remove("hide-contact");
+  LinkedInIcon.classList.remove("hide-li-icon");
 });
 
 githubBTN.addEventListener("click", () => {
@@ -105,6 +127,8 @@ githubBTN.addEventListener("click", () => {
   githubIcon.classList.add("show-github-icon");
   homePageTitle.classList.add("hide");
   homePageFooter.classList.add("hide");
+  homePageContact.classList.add("hide-contact");
+  LinkedInIcon.classList.add("hide-li-icon");
 });
 
 backArrowGithub.addEventListener("click", () => {
@@ -117,6 +141,8 @@ backArrowGithub.addEventListener("click", () => {
   backArrowGithub.classList.remove("backarrow-github");
   homePageTitle.classList.remove("hide");
   homePageFooter.classList.remove("hide");
+  homePageContact.classList.remove("hide-contact");
+  LinkedInIcon.classList.remove("hide-li-icon");
 });
 
 aboutBTN.addEventListener("click", () => {
@@ -130,6 +156,8 @@ aboutBTN.addEventListener("click", () => {
   aboutContainer.classList.add("show-about");
   homePageTitle.classList.add("hide");
   homePageFooter.classList.add("hide");
+  homePageContact.classList.add("hide-contact");
+  LinkedInIcon.classList.add("hide-li-icon");
 });
 
 backArrowAboutMe.addEventListener("click", () => {
@@ -143,6 +171,8 @@ backArrowAboutMe.addEventListener("click", () => {
   mainContainer.classList.remove("about-div-style");
   homePageTitle.classList.remove("hide");
   homePageFooter.classList.remove("hide");
+  homePageContact.classList.remove("hide-contact");
+  LinkedInIcon.classList.remove("hide-li-icon");
 });
 
 bigProjectsBTN.addEventListener("click", () => {
@@ -203,7 +233,7 @@ bigProjectBTN1.addEventListener("click", () => {
   backArrowBigProjects.classList.remove("big");
   backArrowBigProject.classList.add("big-project");
   console.log("working");
-  bigProjectBTN1.classList.add('animate-big-btn-1');
+  bigProjectBTN1.classList.add("animate-big-btn-1");
   mainContainer.classList.remove("big-projects-style");
   mainContainer.classList.add("big-project-style");
   bigProjectContainer1.classList.add("show-big-project");
@@ -220,175 +250,175 @@ backArrowBigProject.addEventListener("click", () => {
   backArrowBigProjects.classList.add("big");
   mainContainer.classList.remove("big-project-style");
   mainContainer.classList.add("big-projects-style");
-  bigProjectBTN1.classList.remove('animate-big-btn-1');
+  bigProjectBTN1.classList.remove("animate-big-btn-1");
 });
 
 bigProjectBTN2.addEventListener("click", () => {
-    bigProjectBTN1.style.opacity = 0;
-    bigProjectBTN3.style.opacity = 0;
-    body.classList.add("big-project-style2");
-    backArrowBigProjects.classList.remove("big");
-    backArrowBigProject2.classList.add("big-project2");
-    console.log("working");
-    bigProjectBTN2.classList.add('animate-big-btn-2');
-    mainContainer.classList.remove("big-projects-style");
-    mainContainer.classList.add("big-project-style2");
-    bigProjectContainer2.classList.add("show-big-project");
-    console.log("done");
-  });
-  
-  backArrowBigProject2.addEventListener("click", () => {
-    bigProjectBTN1.style.opacity = 1;
-    bigProjectBTN3.style.opacity = 1;
-    body.classList.remove("big-project-style2");
-    body.classList.add("big-projects-style");
-    bigProjectContainer2.classList.remove("show-big-project");
-    backArrowBigProject2.classList.remove("big-project2");
-    backArrowBigProjects.classList.add("big");
-    mainContainer.classList.remove("big-project-style2");
-    mainContainer.classList.add("big-projects-style");
-    bigProjectBTN2.classList.remove('animate-big-btn-2');
-  });
+  bigProjectBTN1.style.opacity = 0;
+  bigProjectBTN3.style.opacity = 0;
+  body.classList.add("big-project-style2");
+  backArrowBigProjects.classList.remove("big");
+  backArrowBigProject2.classList.add("big-project2");
+  console.log("working");
+  bigProjectBTN2.classList.add("animate-big-btn-2");
+  mainContainer.classList.remove("big-projects-style");
+  mainContainer.classList.add("big-project-style2");
+  bigProjectContainer2.classList.add("show-big-project");
+  console.log("done");
+});
 
-  bigProjectBTN3.addEventListener("click", () => {
-    bigProjectBTN1.style.opacity = 0;
-    bigProjectBTN2.style.opacity = 0;
-    body.classList.add("big-project-style3");
-    backArrowBigProjects.classList.remove("big");
-    backArrowBigProject3.classList.add("big-project3");
-    console.log("working");
-    bigProjectBTN3.classList.add('animate-big-btn-3');
-    mainContainer.classList.remove("big-projects-style");
-    mainContainer.classList.add("big-project-style3");
-    bigProjectContainer3.classList.add("show-big-project");
-    console.log("done");
-  });
-  
-  backArrowBigProject3.addEventListener("click", () => {
-    bigProjectBTN2.style.opacity = 1;
-    bigProjectBTN1.style.opacity = 1;
-    body.classList.remove("big-project-style3");
-    body.classList.add("big-projects-style");
-    bigProjectContainer3.classList.remove("show-big-project");
-    backArrowBigProject3.classList.remove("big-project3");
-    backArrowBigProjects.classList.add("big");
-    mainContainer.classList.remove("big-project-style3");
-    mainContainer.classList.add("big-projects-style");
-    bigProjectBTN3.classList.remove('animate-big-btn-3');
-  });
+backArrowBigProject2.addEventListener("click", () => {
+  bigProjectBTN1.style.opacity = 1;
+  bigProjectBTN3.style.opacity = 1;
+  body.classList.remove("big-project-style2");
+  body.classList.add("big-projects-style");
+  bigProjectContainer2.classList.remove("show-big-project");
+  backArrowBigProject2.classList.remove("big-project2");
+  backArrowBigProjects.classList.add("big");
+  mainContainer.classList.remove("big-project-style2");
+  mainContainer.classList.add("big-projects-style");
+  bigProjectBTN2.classList.remove("animate-big-btn-2");
+});
 
-  smallProjectBTN1.addEventListener("click", () => {
-    smallProjectBTN2.style.opacity = 0;
-    smallProjectBTN3.style.opacity = 0;
-    smallProjectBTN4.style.opacity = 0;
-    body.classList.add("small-project-style1");
-    backArrowSmallProjects.classList.remove("small");
-    backArrowSmallProject1.classList.add("small-project1");
-    console.log("working");
-    smallProjectBTN1.classList.add('animate-small-btn-1');
-    mainContainer.classList.remove("small-projects-style");
-    mainContainer.classList.add("small-project-style1");
-    smallProjectContainer1.classList.add("show-small-project");
-    console.log("done");
-  });
-  
-  backArrowSmallProject1.addEventListener("click", () => {
-    smallProjectBTN2.style.opacity = 1;
-    smallProjectBTN3.style.opacity = 1;
-    smallProjectBTN4.style.opacity = 1;
-    body.classList.remove("small-project-style1");
-    body.classList.add("small-projects-style");
-    smallProjectContainer1.classList.remove("show-small-project");
-    backArrowSmallProject1.classList.remove("small-project1");
-    backArrowSmallProject1.classList.add("small");
-    mainContainer.classList.remove("small-project-style1");
-    mainContainer.classList.add("small-projects-style");
-    smallProjectBTN1.classList.remove('animate-small-btn-1');
-  });
+bigProjectBTN3.addEventListener("click", () => {
+  bigProjectBTN1.style.opacity = 0;
+  bigProjectBTN2.style.opacity = 0;
+  body.classList.add("big-project-style3");
+  backArrowBigProjects.classList.remove("big");
+  backArrowBigProject3.classList.add("big-project3");
+  console.log("working");
+  bigProjectBTN3.classList.add("animate-big-btn-3");
+  mainContainer.classList.remove("big-projects-style");
+  mainContainer.classList.add("big-project-style3");
+  bigProjectContainer3.classList.add("show-big-project");
+  console.log("done");
+});
 
-  smallProjectBTN2.addEventListener("click", () => {
-    smallProjectBTN1.style.opacity = 0;
-    smallProjectBTN3.style.opacity = 0;
-    smallProjectBTN4.style.opacity = 0;
-    body.classList.add("small-project-style2");
-    backArrowSmallProjects.classList.remove("small");
-    backArrowSmallProject2.classList.add("small-project2");
-    console.log("working");
-    smallProjectBTN2.classList.add('animate-small-btn-2');
-    mainContainer.classList.remove("small-projects-style");
-    mainContainer.classList.add("small-project-style2");
-    smallProjectContainer2.classList.add("show-small-project");
-    console.log("done");
-  });
-  
-  backArrowSmallProject2.addEventListener("click", () => {
-    smallProjectBTN1.style.opacity = 1;
-    smallProjectBTN3.style.opacity = 1;
-    smallProjectBTN4.style.opacity = 1;
-    body.classList.remove("small-project-style2");
-    body.classList.add("small-projects-style");
-    smallProjectContainer2.classList.remove("show-small-project");
-    backArrowSmallProject2.classList.remove("small-project2");
-    backArrowSmallProject2.classList.add("small");
-    mainContainer.classList.remove("small-project-style2");
-    mainContainer.classList.add("small-projects-style");
-    smallProjectBTN2.classList.remove('animate-small-btn-2');
-  });
+backArrowBigProject3.addEventListener("click", () => {
+  bigProjectBTN2.style.opacity = 1;
+  bigProjectBTN1.style.opacity = 1;
+  body.classList.remove("big-project-style3");
+  body.classList.add("big-projects-style");
+  bigProjectContainer3.classList.remove("show-big-project");
+  backArrowBigProject3.classList.remove("big-project3");
+  backArrowBigProjects.classList.add("big");
+  mainContainer.classList.remove("big-project-style3");
+  mainContainer.classList.add("big-projects-style");
+  bigProjectBTN3.classList.remove("animate-big-btn-3");
+});
 
-  smallProjectBTN3.addEventListener("click", () => {
-    smallProjectBTN1.style.opacity = 0;
-    smallProjectBTN2.style.opacity = 0;
-    smallProjectBTN4.style.opacity = 0;
-    body.classList.add("small-project-style3");
-    backArrowSmallProjects.classList.remove("small");
-    backArrowSmallProject3.classList.add("small-project3");
-    console.log("working");
-    smallProjectBTN3.classList.add('animate-small-btn-3');
-    mainContainer.classList.remove("small-projects-style");
-    mainContainer.classList.add("small-project-style3");
-    smallProjectContainer3.classList.add("show-small-project");
-    console.log("done");
-  });
-  
-  backArrowSmallProject3.addEventListener("click", () => {
-    smallProjectBTN1.style.opacity = 1;
-    smallProjectBTN2.style.opacity = 1;
-    smallProjectBTN4.style.opacity = 1;
-    body.classList.remove("small-project-style3");
-    body.classList.add("small-projects-style");
-    smallProjectContainer3.classList.remove("show-small-project");
-    backArrowSmallProject3.classList.remove("small-project3");
-    backArrowSmallProjects.classList.add("small");
-    mainContainer.classList.remove("small-project-style3");
-    mainContainer.classList.add("small-projects-style");
-    smallProjectBTN3.classList.remove('animate-small-btn-3');
-  });
+smallProjectBTN1.addEventListener("click", () => {
+  smallProjectBTN2.style.opacity = 0;
+  smallProjectBTN3.style.opacity = 0;
+  smallProjectBTN4.style.opacity = 0;
+  body.classList.add("small-project-style1");
+  backArrowSmallProjects.classList.remove("small");
+  backArrowSmallProject1.classList.add("small-project1");
+  console.log("working");
+  smallProjectBTN1.classList.add("animate-small-btn-1");
+  mainContainer.classList.remove("small-projects-style");
+  mainContainer.classList.add("small-project-style1");
+  smallProjectContainer1.classList.add("show-small-project");
+  console.log("done");
+});
 
-  smallProjectBTN4.addEventListener("click", () => {
-    smallProjectBTN1.style.opacity = 0;
-    smallProjectBTN2.style.opacity = 0;
-    smallProjectBTN3.style.opacity = 0;
-    body.classList.add("small-project-style4");
-    backArrowSmallProjects.classList.remove("small");
-    backArrowSmallProject4.classList.add("small-project4");
-    console.log("working");
-    smallProjectBTN4.classList.add('animate-small-btn-4');
-    mainContainer.classList.remove("small-projects-style");
-    mainContainer.classList.add("small-project-style4");
-    smallProjectContainer4.classList.add("show-small-project");
-    console.log("done");
-  });
-  
-  backArrowSmallProject4.addEventListener("click", () => {
-    smallProjectBTN1.style.opacity = 1;
-    smallProjectBTN2.style.opacity = 1;
-    smallProjectBTN3.style.opacity = 1;
-    body.classList.remove("small-project-style4");
-    body.classList.add("small-projects-style");
-    smallProjectContainer4.classList.remove("show-small-project");
-    backArrowSmallProject4.classList.remove("small-project4");
-    backArrowSmallProjects.classList.add("small");
-    mainContainer.classList.remove("small-project-style4");
-    mainContainer.classList.add("small-projects-style");
-    smallProjectBTN4.classList.remove('animate-small-btn-4');
-  });
+backArrowSmallProject1.addEventListener("click", () => {
+  smallProjectBTN2.style.opacity = 1;
+  smallProjectBTN3.style.opacity = 1;
+  smallProjectBTN4.style.opacity = 1;
+  body.classList.remove("small-project-style1");
+  body.classList.add("small-projects-style");
+  smallProjectContainer1.classList.remove("show-small-project");
+  backArrowSmallProject1.classList.remove("small-project1");
+  backArrowSmallProject1.classList.add("small");
+  mainContainer.classList.remove("small-project-style1");
+  mainContainer.classList.add("small-projects-style");
+  smallProjectBTN1.classList.remove("animate-small-btn-1");
+});
+
+smallProjectBTN2.addEventListener("click", () => {
+  smallProjectBTN1.style.opacity = 0;
+  smallProjectBTN3.style.opacity = 0;
+  smallProjectBTN4.style.opacity = 0;
+  body.classList.add("small-project-style2");
+  backArrowSmallProjects.classList.remove("small");
+  backArrowSmallProject2.classList.add("small-project2");
+  console.log("working");
+  smallProjectBTN2.classList.add("animate-small-btn-2");
+  mainContainer.classList.remove("small-projects-style");
+  mainContainer.classList.add("small-project-style2");
+  smallProjectContainer2.classList.add("show-small-project");
+  console.log("done");
+});
+
+backArrowSmallProject2.addEventListener("click", () => {
+  smallProjectBTN1.style.opacity = 1;
+  smallProjectBTN3.style.opacity = 1;
+  smallProjectBTN4.style.opacity = 1;
+  body.classList.remove("small-project-style2");
+  body.classList.add("small-projects-style");
+  smallProjectContainer2.classList.remove("show-small-project");
+  backArrowSmallProject2.classList.remove("small-project2");
+  backArrowSmallProject2.classList.add("small");
+  mainContainer.classList.remove("small-project-style2");
+  mainContainer.classList.add("small-projects-style");
+  smallProjectBTN2.classList.remove("animate-small-btn-2");
+});
+
+smallProjectBTN3.addEventListener("click", () => {
+  smallProjectBTN1.style.opacity = 0;
+  smallProjectBTN2.style.opacity = 0;
+  smallProjectBTN4.style.opacity = 0;
+  body.classList.add("small-project-style3");
+  backArrowSmallProjects.classList.remove("small");
+  backArrowSmallProject3.classList.add("small-project3");
+  console.log("working");
+  smallProjectBTN3.classList.add("animate-small-btn-3");
+  mainContainer.classList.remove("small-projects-style");
+  mainContainer.classList.add("small-project-style3");
+  smallProjectContainer3.classList.add("show-small-project");
+  console.log("done");
+});
+
+backArrowSmallProject3.addEventListener("click", () => {
+  smallProjectBTN1.style.opacity = 1;
+  smallProjectBTN2.style.opacity = 1;
+  smallProjectBTN4.style.opacity = 1;
+  body.classList.remove("small-project-style3");
+  body.classList.add("small-projects-style");
+  smallProjectContainer3.classList.remove("show-small-project");
+  backArrowSmallProject3.classList.remove("small-project3");
+  backArrowSmallProjects.classList.add("small");
+  mainContainer.classList.remove("small-project-style3");
+  mainContainer.classList.add("small-projects-style");
+  smallProjectBTN3.classList.remove("animate-small-btn-3");
+});
+
+smallProjectBTN4.addEventListener("click", () => {
+  smallProjectBTN1.style.opacity = 0;
+  smallProjectBTN2.style.opacity = 0;
+  smallProjectBTN3.style.opacity = 0;
+  body.classList.add("small-project-style4");
+  backArrowSmallProjects.classList.remove("small");
+  backArrowSmallProject4.classList.add("small-project4");
+  console.log("working");
+  smallProjectBTN4.classList.add("animate-small-btn-4");
+  mainContainer.classList.remove("small-projects-style");
+  mainContainer.classList.add("small-project-style4");
+  smallProjectContainer4.classList.add("show-small-project");
+  console.log("done");
+});
+
+backArrowSmallProject4.addEventListener("click", () => {
+  smallProjectBTN1.style.opacity = 1;
+  smallProjectBTN2.style.opacity = 1;
+  smallProjectBTN3.style.opacity = 1;
+  body.classList.remove("small-project-style4");
+  body.classList.add("small-projects-style");
+  smallProjectContainer4.classList.remove("show-small-project");
+  backArrowSmallProject4.classList.remove("small-project4");
+  backArrowSmallProjects.classList.add("small");
+  mainContainer.classList.remove("small-project-style4");
+  mainContainer.classList.add("small-projects-style");
+  smallProjectBTN4.classList.remove("animate-small-btn-4");
+});
