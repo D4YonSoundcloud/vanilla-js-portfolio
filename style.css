@@ -172,7 +172,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.backarrow-projects {
   opacity: 0.7;
   color: rgb(199, 95, 95);
-  transform: translateY(150px) scale(2.5);
+  transform: translateY(150px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.backarrow-projects:hover {
@@ -184,7 +184,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.big-project {
   opacity: 0.9;
   color: rgb(161, 71, 177);
-  transform: translateY(45px) scale(2.5);
+  transform: translateY(45px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.big-project:hover {
@@ -195,7 +195,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.big-project2 {
   opacity: 0.9;
   color: rgb(223, 215, 115);
-  transform: translateY(45px) scale(2.5);
+  transform: translateY(45px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.big-project2:hover {
@@ -206,7 +206,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.big-project3 {
   opacity: 0.9;
   color: rgb(53, 131, 155);
-  transform: translateY(45px) scale(2.5);
+  transform: translateY(45px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.big-project3:hover {
@@ -217,7 +217,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.big {
   opacity: 0.9;
   color: rgb(53, 53, 53);
-  transform: translateY(45px) scale(2.5);
+  transform: translateY(45px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.big:hover {
@@ -228,7 +228,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.small {
   opacity: 0.9;
   color: rgb(218, 153, 101);
-  transform: scale(2.5);
+  transform: scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.small:hover {
@@ -239,7 +239,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.small-project1 {
   opacity: 0.9;
   color: rgb(146, 41, 149);
-  transform: translateY(90px) scale(2.5);
+  transform: translateY(90px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.small-project1:hover {
@@ -251,7 +251,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.small-project2 {
   opacity: 0.9;
   color: rgb(56, 148, 99);
-  transform: translateY(90px) scale(2.5);
+  transform: translateY(90px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.small-project2:hover {
@@ -263,7 +263,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.small-project3 {
   opacity: 0.9;
   color: rgb(56, 107, 148);
-  transform: translateY(90px) scale(2.5);
+  transform: translateY(90px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.small-project3:hover {
@@ -274,7 +274,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.small-project4 {
     opacity: 0.9;
     color: rgb(58, 58, 58);
-    transform: translateY(100px) scale(2.5);
+    transform: translateY(100px) scale(3);
     transition: 0.4s ease;
   }
   .fas.fa-long-arrow-alt-left.small-project4:hover {
@@ -285,7 +285,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.backarrow-github {
   opacity: 0.7;
   color: rgb(94, 185, 129);
-  transform: translateY(110px) scale(2.5);
+  transform: translateY(110px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.backarrow-github:hover {
@@ -296,7 +296,7 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.backarrow-aboutme {
   opacity: 0.7;
   color: rgb(78, 122, 180);
-  transform: translateY(40px) scale(2.5);
+  transform: translateY(40px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.backarrow-aboutme:hover {
@@ -441,18 +441,18 @@ div.small-project.animate-small-btn-1:hover {
 
 div.small-project.animate-small-btn-2 {
   color: rgb(25, 100, 43);
-  text-shadow: -1px 0 1px rgb(8, 95, 55), 0 1px 1px rgb(21, 71, 20),
-    1px 0 1px rgb(32, 88, 30), 0 -1px 1px rgb(14, 66, 27);
+  text-shadow: -1px 0 2px rgb(3, 54, 30), 0 1px 2px rgb(5, 46, 5),
+    1px 0 2px rgb(8, 47, 7), 0 -1px 2px rgb(2, 27, 8);
   transform: translateY(-50px) scale(1);
 }
 div.small-project.animate-small-btn-2:hover {
   transform: translateY(-50px) scale(1.1);
-  color: rgb(5, 42, 14);
+  color: rgb(16, 70, 30);
 }
 div.small-project.animate-small-btn-3 {
   color: rgb(69, 124, 168);
-  text-shadow: -1px 0 1px rgb(8, 56, 95), 0 1px 1px rgb(20, 40, 71),
-    1px 0 1px rgb(30, 55, 88), 0 -1px 1px rgb(14, 37, 66);
+  text-shadow: -1px 0 4px rgb(8, 56, 95), 0 1px 4px rgb(20, 40, 71),
+    1px 0 4px rgb(30, 55, 88), 0 -1px 4px rgb(14, 37, 66);
   transform: translateY(-130px) scale(1);
 }
 div.small-project.animate-small-btn-3:hover {
@@ -461,8 +461,8 @@ div.small-project.animate-small-btn-3:hover {
 }
 div.small-project.animate-small-btn-4 {
   color: rgb(90, 90, 90);
-  text-shadow: -1px 0 1px rgb(39, 39, 39), 0 1px 1px rgb(29, 29, 29),
-    1px 0 1px rgb(58, 58, 58), 0 -1px 1px rgb(44, 44, 44);
+  text-shadow: -1px 0 3px rgb(39, 39, 39), 0 1px 3px rgb(29, 29, 29),
+    1px 0 3px rgb(58, 58, 58), 0 -1px 3px rgb(44, 44, 44);
   transform: translateY(-210px) scale(0.65);
 }
 div.small-project.animate-small-btn-4:hover {
