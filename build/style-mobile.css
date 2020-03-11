@@ -452,19 +452,19 @@
       
       div.big-project.animate-big-btn-2 {
         color: rgb(88, 88, 88);
-        transform: translateY(-100px);
+        transform: translateY(-140px);
       }
       
       div.big-project.animate-big-btn-2:hover {
-        transform: translateY(-100px) scale(1.1);
+        transform: translateY(-140px) scale(1.1);
       }
       div.big-project.animate-big-btn-3 {
         color: rgb(38, 115, 136);
-        transform: translateY(-230px);
+        transform: translateY(-280px);
       }
       
       div.big-project.animate-big-btn-3:hover {
-        transform: translateY(-230px) scale(1.1);
+        transform: translateY(-280px) scale(1.1);
       }
       
       div.small-project.animate-small-btn-1 {
@@ -547,7 +547,7 @@
         padding: 50px 60px;
         font-family: "Spartan";
         color: rgb(126, 126, 126);
-        font-size: 2.0rem;
+        font-size: 1.75rem;
         text-shadow: -1px 0 2px rgb(0, 0, 0), 0 1px 2px rgb(0, 0, 0),
           1px 0 2px rgb(0, 0, 0), 0 -1px 2px rgb(0, 0, 0);
         transition: 0.6s ease;
@@ -608,7 +608,7 @@
         padding: 20px 20px;
         font-family: "Spartan";
         color: rgb(41, 37, 3);
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         text-shadow: -1px 0 1px rgb(63, 62, 62), 0 1px 1px rgb(77, 76, 76),
           1px 0 1px rgb(109, 109, 109), 0 -1px 1px rgb(51, 51, 51);
         transition: 0.6s ease;
@@ -642,7 +642,7 @@
         padding: 20px 20px;
         font-family: "Spartan";
         color: rgb(20, 92, 114);
-        font-size: 1.25rem;
+        font-size: 1.15rem;
         text-shadow: -1px 0 1px rgb(54, 117, 133), 0 1px 1px rgb(46, 119, 141),
           1px 0 1px rgb(36, 106, 128), 0 -1px 1px rgb(28, 134, 138);
         transition: 0.6s ease;
@@ -855,7 +855,7 @@
       
       div.projects-style {
         border-radius: 50% !important;
-        transform: scale(1.5);
+        transform: scale(1.4);
         background-color: rgb(224, 145, 145) !important;
         box-shadow: -8px 1px 2px 1px rgb(158, 19, 12) !important;
       }
@@ -863,7 +863,7 @@
       div.big-projects-style {
         border-radius: 50px 50px 50px 50px !important;
         width: 275px !important;
-        height: 500px !important;
+        height: 400px !important;
         background-color: rgb(42, 42, 42) !important;
         box-shadow: 5px 4px 2px 1px rgb(19, 18, 18) !important;
       }
