@@ -175,6 +175,7 @@
         text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black,
           0 -1px 2px black;
         transition: 0.4s ease-in-out;
+        z-index: 2;
       }
       
       div.button:hover {
@@ -395,7 +396,7 @@
         padding: 20px 20px;
         font-family: "Spartan";
         color: rgb(226, 176, 176);
-        font-size: 2.75rem;
+        font-size: 2.25rem;
         text-shadow: -1px 0 3.5px rgb(138, 39, 39), 0 1px 3.5px rgb(112, 18, 18),
           1px 0 3.5px rgb(131, 32, 32), 0 -1px 3.5px rgb(117, 57, 57);
         transition: 0.4s ease;
@@ -856,14 +857,15 @@
       
       div.projects-style {
         border-radius: 50% !important;
-        transform: scale(1.4);
+        height: 250px !important; 
+        width: 250px !important;
         background-color: rgb(224, 145, 145) !important;
         box-shadow: -8px 1px 2px 1px rgb(158, 19, 12) !important;
       }
       
       div.big-projects-style {
         border-radius: 50px 50px 50px 50px !important;
-        width: 250px !important;
+        width: 275px !important;
         height: 400px !important;
         background-color: rgb(42, 42, 42) !important;
         box-shadow: 5px 4px 2px 1px rgb(19, 18, 18) !important;
