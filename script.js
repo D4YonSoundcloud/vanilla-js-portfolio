@@ -330,7 +330,7 @@ backArrowSmallProject1.addEventListener("click", () => {
   body.classList.add("small-projects-style");
   smallProjectContainer1.classList.remove("show-small-project");
   backArrowSmallProject1.classList.remove("small-project1");
-  backArrowSmallProject1.classList.add("small");
+  backArrowSmallProjects.classList.add("small");
   mainContainer.classList.remove("small-project-style1");
   mainContainer.classList.add("small-projects-style");
   smallProjectBTN1.classList.remove("animate-small-btn-1");
@@ -359,7 +359,7 @@ backArrowSmallProject2.addEventListener("click", () => {
   body.classList.add("small-projects-style");
   smallProjectContainer2.classList.remove("show-small-project");
   backArrowSmallProject2.classList.remove("small-project2");
-  backArrowSmallProject2.classList.add("small");
+  backArrowSmallProjects.classList.add("small");
   mainContainer.classList.remove("small-project-style2");
   mainContainer.classList.add("small-projects-style");
   smallProjectBTN2.classList.remove("animate-small-btn-2");
