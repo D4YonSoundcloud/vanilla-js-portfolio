@@ -245,13 +245,13 @@
       .fas.fa-long-arrow-alt-left.small {
         opacity: 0.9;
         color: rgb(218, 153, 101);
-        transform: scale(3);
+        transform: translateY(10px) scale(3);
         transition: 0.4s ease;
       }
       .fas.fa-long-arrow-alt-left.small:hover {
         opacity: 1;
         color: rgb(168, 100, 60);
-        transform: scale(3.5);
+        transform:translateY(10px) scale(3.5);
       }
       .fas.fa-long-arrow-alt-left.small-project1 {
         opacity: 0.9;
@@ -443,28 +443,28 @@
       
       div.big-project.animate-big-btn-1 {
         color: rgb(179, 92, 174);
-        transform: translateY(30px);
+        transform: translateY(-10px);
       }
       
       div.big-project.animate-big-btn-1:hover {
-        transform: translateY(30px) scale(1.1);
+        transform: translateY(-10px) scale(1.1);
       }
       
       div.big-project.animate-big-btn-2 {
         color: rgb(88, 88, 88);
-        transform: translateY(-140px);
+        transform: translateY(-160px);
       }
       
       div.big-project.animate-big-btn-2:hover {
-        transform: translateY(-140px) scale(1.1);
+        transform: translateY(-160px) scale(1.1);
       }
       div.big-project.animate-big-btn-3 {
         color: rgb(38, 115, 136);
-        transform: translateY(-280px);
+        transform: translateY(-300px);
       }
       
       div.big-project.animate-big-btn-3:hover {
-        transform: translateY(-280px) scale(1.1);
+        transform: translateY(-300px) scale(1.1);
       }
       
       div.small-project.animate-small-btn-1 {
