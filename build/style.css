@@ -17,7 +17,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: var(--background-color, rgb(241, 241, 241));
-  transition: 0.7s ease-in;
+  transition: 0.8s ease-in;
 }
 
 body.projects-style {
@@ -81,7 +81,7 @@ body.small-project-style4 {
   box-shadow: calc(var(--x-position, 3) * 1px) calc(var(--y-position, 3) * 1px)
     calc(var(--blur, 2) * 1px) calc(var(--spread, 1) * 1px)
     var(--shadow-color, rgb(175, 174, 174));
-  transition: 1s ease;
+  transition: 0.8s ease;
 }
 #home-page-contact{
   opacity: 0.8;
@@ -315,20 +315,20 @@ div.button:hover {
 .fas.fa-long-arrow-alt-left.backarrow-aboutme {
   opacity: 0.7;
   color: rgb(78, 122, 180);
-  transform: translateY(20px) scale(3);
+  transform: translateY(0px) scale(3);
   transition: 0.4s ease;
 }
 .fas.fa-long-arrow-alt-left.backarrow-aboutme:hover {
   opacity: 0.7;
   color: rgb(50, 77, 109);
-  transform: translateY(20px) scale(3.5);
+  transform: translateY(0px) scale(3.5);
 }
 .fab.fa-github {
   opacity: 0;
   color: rgb(63, 126, 68);
   transform: scale(0) translateX(50);
   padding: 10px;
-  transition: 0.8s ease;
+  transition: 0.6s ease;
 }
 .fab.fa-github.show-github-icon {
   opacity: 0.8;
@@ -343,7 +343,7 @@ a.github-link {
   color: rgb(63, 126, 68);
   text-shadow: -1px 0 1px rgb(45, 146, 92), 0 1px 1px rgb(75, 175, 145),
     1px 0 1px rgb(48, 126, 67), 0 -1px 1px rgb(19, 144, 36);
-  transition: 0.4s ease;
+  transition: 0.6s ease;
 }
 
 a.github-link:hover {
@@ -353,14 +353,14 @@ a.github-link:hover {
 .fab.fa-linkedin{
   color: rgba(134, 134, 134, 0.705);
   transform: scale(1.5);
-  transition: 0.6s ease
+  transition:0.4s ease
 }
 
 .fab.fa-linkedin.hide-li-icon{
   color: rgba(134, 134, 134, 0.705);
   opacity: 0;
   transform: scale(1.5);
-  transition: 0.6s ease
+  transition: 0.4s ease
 }
 
 
@@ -378,7 +378,7 @@ div.about-profile {
   font-size: 3rem;
   text-shadow: -1px 0 2px rgb(63, 152, 194), 0 1px 2px rgb(13, 95, 143),
     1px 0 2px rgb(17, 45, 110), 0 -1px 2px rgb(35, 77, 175);
-  transition: 0.8s ease-out;
+  transition:0.4s ease;
 }
 
 div.about-text {
@@ -400,7 +400,7 @@ div.small-projects {
   font-size: 3.5rem;
   text-shadow: -1px 0 3.5px rgb(138, 39, 39), 0 1px 3.5px rgb(112, 18, 18),
     1px 0 3.5px rgb(131, 32, 32), 0 -1px 3.5px rgb(117, 57, 57);
-  transition: 0.5s ease-in-out;
+  transition: 0.4s ease;
 }
 
 div.big-projects:hover,
@@ -420,7 +420,7 @@ div.big-projects-container {
   align-items: center;
   justify-content: center;
   z-index: 0;
-  transition: 1s ease-in;
+  transition: 0.4s ease;
 }
 div.big-projects-container.show-big-projects {
   opacity: 1;
@@ -436,7 +436,7 @@ div.big-project-container {
   align-items: center;
   justify-content: center;
   z-index: 0;
-  transition: 1s ease-in;
+  transition: 0.4s ease;
 }
 div.big-project-container.show-big-project {
   opacity: 1;
@@ -551,7 +551,7 @@ div.big-project {
   font-size: 2.5rem;
   text-shadow: -1px 0 2px rgb(0, 0, 0), 0 1px 2px rgb(0, 0, 0),
     1px 0 2px rgb(0, 0, 0), 0 -1px 2px rgb(0, 0, 0);
-  transition: 0.6s ease;
+  transition:0.4s ease;
 }
 
 div.big-project-container.show-big-projects {
@@ -578,7 +578,7 @@ div.big-project-info {
   font-size: 1.25rem;
   text-shadow: -1px 0 1px rgb(87, 46, 104), 0 1px 1px rgb(84, 14, 97),
     1px 0 1px rgb(91, 17, 104), 0 -1px 1px rgb(117, 36, 128);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 div.big-project-info:hover {
@@ -594,7 +594,7 @@ a.big-project-github {
   color: rgb(117, 67, 119);
   text-shadow: -1px 0 1px rgb(59, 4, 57), 0 1px 1px rgb(59, 5, 57),
     1px 0 1px rgb(71, 15, 62), 0 -1px 1px rgb(75, 10, 71);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 a.big-project-github:hover {
@@ -612,7 +612,7 @@ div.big-project-info2 {
   font-size: 1.25rem;
   text-shadow: -1px 0 1px rgb(63, 62, 62), 0 1px 1px rgb(77, 76, 76),
     1px 0 1px rgb(109, 109, 109), 0 -1px 1px rgb(51, 51, 51);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 div.big-project-info2:hover {
@@ -628,7 +628,7 @@ a.big-project-github2 {
   color: rgb(32, 29, 3);
   text-shadow: -1px 0 1px rgb(0, 0, 0), 0 1px 1px rgb(0, 0, 0),
     1px 0 1px rgb(0, 0, 0), 0 -1px 1px rgb(0, 0, 0);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 a.big-project-github2:hover {
@@ -646,7 +646,7 @@ div.big-project-info3 {
   font-size: 1.25rem;
   text-shadow: -1px 0 1px rgb(54, 117, 133), 0 1px 1px rgb(46, 119, 141),
     1px 0 1px rgb(36, 106, 128), 0 -1px 1px rgb(28, 134, 138);
-  transition: 0.6s ease;
+  transition:0.4s ease;
 }
 
 a.big-project-github3 {
@@ -656,7 +656,7 @@ a.big-project-github3 {
   color: rgb(39, 98, 116);
   text-shadow: -1px 0 1px rgb(36, 74, 105), 0 1px 1px rgb(52, 102, 131),
     1px 0 1px rgb(8, 52, 78), 0 -1px 1px rgba(27, 54, 97, 0);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 div.big-project-info3:hover {
@@ -680,7 +680,7 @@ div.small-project {
   font-size: 2rem;
   text-shadow: -1px 0 1px rgb(190, 82, 39), 0 1px 1px rgb(170, 94, 49),
     1px 0 1px rgb(170, 115, 63), 0 -1px 1px rgb(156, 92, 40);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 div.small-project:hover {
@@ -703,7 +703,7 @@ div.small-project-info1 {
   font-size: 1rem;
   text-shadow: -1px 0 1px rgb(103, 32, 121), 0 1px 1px rgb(199, 65, 188),
     1px 0 1px rgb(172, 80, 214), 0 -1px 1px rgb(176, 87, 199);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 div.small-project-info1:hover {
@@ -722,7 +722,7 @@ a.small-project-github1 {
   color: rgb(87, 10, 90);
   text-shadow: -1px 0 1px rgb(58, 9, 58), 0 1px 1px rgb(109, 52, 131),
     1px 0 1px rgb(159, 46, 163), 0 -1px 1px rgb(156, 46, 184);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 a.small-project-github1:hover {
@@ -740,7 +740,7 @@ div.small-project-info2 {
   font-size: 1rem;
   text-shadow: -1px 0 1px rgb(32, 121, 62), 0 1px 1px rgb(65, 199, 110),
     1px 0 1px rgb(35, 102, 35), 0 -1px 1px rgb(15, 95, 48);
-  transition: 0.6s ease;
+  transition:0.4s ease;
 }
 
 div.small-project-info2:hover {
@@ -759,7 +759,7 @@ a.small-project-github2 {
   color: rgb(7, 71, 10);
   text-shadow: -1px 0 1px rgb(8, 77, 11), 0 1px 1px rgb(52, 131, 82),
     1px 0 1px rgb(83, 165, 76), 0 -1px 1px rgb(28, 110, 17);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 a.small-project-github2:hover {
@@ -779,7 +779,7 @@ div.small-project-info3 {
   font-size: 1rem;
   text-shadow: -1px 0 1px rgb(21, 97, 116), 0 1px 1px rgb(65, 134, 199),
     1px 0 1px rgb(55, 81, 131), 0 -1px 1px rgb(42, 111, 133);
-  transition: 0.6s ease;
+  transition:0.4s ease;
 }
 
 div.small-project-info3:hover {
@@ -798,7 +798,7 @@ a.small-project-github3 {
   color: rgb(42, 100, 139);
   text-shadow: -1px 0 1px rgb(8, 44, 77), 0 1px 1px rgb(52, 102, 131),
     1px 0 1px rgb(76, 122, 165), 0 -1px 1px rgb(17, 88, 110);
-  transition: 0.6s ease;
+  transition: 0.4s ease;
 }
 
 a.small-project-github3:hover {
@@ -818,7 +818,7 @@ div.small-project-info4 {
     font-size: 1rem;
     text-shadow: -1px 0 1px rgb(42, 42, 42), 0 1px 1px rgb(46, 46, 46),
       1px 0 1px rgb(53, 53, 53), 0 -1px 1px rgb(70, 70, 70);
-    transition: 0.6s ease;
+    transition: 0.4s ease;
   }
   
   div.small-project-info4:hover {
@@ -837,7 +837,7 @@ div.small-project-info4 {
     color: rgb(29, 29, 29);
     text-shadow: -1px 0 1px rgb(34, 34, 34), 0 1px 1px rgb(26, 26, 26),
       1px 0 1px rgb(46, 46, 46), 0 -1px 1px rgb(51, 51, 51);
-    transition: 0.6s ease;
+    transition: 0.4s ease;
   }
   
   a.small-project-github4:hover {
@@ -951,7 +951,7 @@ h1 {
   font-size: 2rem;
   text-shadow: -1px 0 2px black, 0 1px 2px black, 1px 0 2px black,
     0 -1px 2px black;
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 
 h1#home-page-title{
@@ -972,7 +972,7 @@ div.about-profile-bio {
   font-size: 1.25rem;
   text-shadow: -1px 0 0.5px rgb(62, 94, 163), 0 1px 0.5px rgb(69, 122, 153),
     1px 0 0.5px rgb(62, 115, 139), 0 -1px 2px rgb(93, 155, 173);
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 
 div.skills {
@@ -987,7 +987,7 @@ div.skills {
   font-size: 1.25rem;
   text-shadow: -1px 0 0.5px rgb(62, 94, 163), 0 1px 0.5px rgb(69, 122, 153),
     1px 0 0.5px rgb(62, 115, 139), 0 -1px 2px rgb(93, 155, 173);
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 div.divider {
   color: rgb(50, 87, 156);
@@ -1020,7 +1020,7 @@ div.about-project-bio {
   font-size: 1.25rem;
   text-shadow: -1px 0 0.5px rgb(62, 94, 163), 0 1px 0.5px rgb(69, 122, 153),
     1px 0 0.5px rgb(62, 115, 139), 0 -1px 2px rgb(93, 155, 173);
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 
 div.github-profile-bio {
@@ -1035,7 +1035,7 @@ div.github-profile-bio {
   transform: translateY(30px);
   text-shadow: -1px 0 5px rgba(31, 83, 24, 0.171),-1px 0 5px rgba(21, 97, 50, 0.075),
     1px 0 5px rgba(26, 110, 51, 0.137), 0 -1px 5px rgba(45, 126, 72, 0.239);
-  transition: 0.5s ease;
+  transition: 0.4s ease;
 }
 div.github-profile-bio:hover{
   cursor: default;
